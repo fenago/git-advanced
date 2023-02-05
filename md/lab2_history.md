@@ -1,8 +1,11 @@
-#### Creating a Repository
+Lab: Exploring Project History
+------------------------------
+
+
+**Creating a Repository**
 
 Let's create a new directory in the `work` folder for our work and then change the current
 working directory to the newly created one:
-
 
 
 ``` 

@@ -1,12 +1,18 @@
-Viewing branches in your repository
+Lab: Advanced Branching Techniques
 ===================================
 
+In this lab, we will cover following:
+
+- Viewing branches in your repository
+- Renaming a branch
+- About changing the default branch
+- Deleting and restoring branches in a pull request
+
+
+**Viewing branches in your repository**
 
 Branches are central to collaboration on GitHub, and the best way to
 view them is the branches page.
-
-
-
 
 1.  On GitHub.com, navigate to the main page of the repository.
 

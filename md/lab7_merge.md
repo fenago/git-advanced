@@ -1,6 +1,6 @@
 
-Merge conflicts
-===============
+Lab: Merging Changes Together
+=============================
 
 In this lab, we will work on resolving merge conflicts.
 
