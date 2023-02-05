@@ -2,9 +2,7 @@ Managing releases in a repository
 =================================
 
 
-
-
-In this lab
+In this lab, we will cover following topics:
 
 - About release management
 - Creating a release
@@ -12,10 +10,7 @@ In this lab
 - Deleting a release
 
 
-You can create releases to bundle and deliver iterations of a project to
-users.
-
-
+You can create releases to bundle and deliver iterations of a project to users.
 
 
 **Who can use this feature**
