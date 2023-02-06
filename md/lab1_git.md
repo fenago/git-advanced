@@ -40,7 +40,7 @@ Now he needs to get his own repository instance:
 ```
 bob@hostB ~$ cd ~/work
 bob@hostB ~$ mkdir bob && cd bob
-bob@hostB ~$ git clone https://github.com/fenago/random.git
+bob@hostB ~$ git clone https://github.com/YOUR_USERNAME/random.git
 
 Cloning into random...
 Warning: You appear to have cloned an empty repository.
@@ -49,6 +49,7 @@ bob@hostB ~$ cd random
 bob@hostB random$
 ```
 
+**Note:** Update `YOUR_USERNAME` with your github user in above git clone command.
 
 Bob notices that Git said that it is an empty
 repository, with no source code yet, and starts
@@ -204,7 +205,7 @@ available for other developers). He pushes the changes:
 bob@hostB random$ git push
 warning: push.default is unset; its implicit value has changed in
 Git 2.0 from 'matching' to 'simple'. To squelch this message [...]
-To https://github.com/fenago/random.git
+To https://github.com/YOUR_USERNAME/random.git
  * [new branch]      master -> master
 bob@hostB random$ git config --global push.default simple
 ```
@@ -240,7 +241,7 @@ alice@hostA ~$ git config --global user.email alice@company.com
 Now Alice needs to set up her own repository instance:
 
 ```
-alice@hostA ~$ git clone https://github.com/fenago/random.git
+alice@hostA ~$ git clone https://github.com/YOUR_USERNAME/random.git
 Cloning into random...
 done.
 ```
@@ -360,7 +361,7 @@ alice@hostA random$ git commit -a -m "Initialize random number generator"
 [master db23d0e] Initialize random number generator
  1 file changed, 2 insertions(+)
 alice@hostA random$ git push
-To https://github.com/fenago/random.git
+To https://github.com/YOUR_USERNAME/random.git
    3b16f17..db23d0e master -> masterRenaming and moving files
 ```
 
@@ -454,9 +455,9 @@ changes:
 ```
 bob@hostA random$ git push
 $ git push
-To https://github.com/fenago/random.git
+To https://github.com/YOUR_USERNAME/random.git
  ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'https://github.com/fenago/random.git'
+error: failed to push some refs to 'https://github.com/YOUR_USERNAME/random.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -483,7 +484,7 @@ Bob uses `pull` to bring in changes (as described in
 
 ```
 bob@hostB random $ git pull
-From https://github.com/fenago/random.git
+From https://github.com/YOUR_USERNAME/random.git
  + 3b16f17...db23d0e master     -> origin/master
 Auto-merging src/rand.c
 Merge made by the 'recursive' strategy.
@@ -505,7 +506,7 @@ Merge: 3b16f17 db23d0e
 Author: Bob Hacker <bob@company.com>
 Date:   Sat May 31 20:43:42 2015 +0200
 
-    Merge branch 'master' of https://github.com/fenago/random.git
+    Merge branch 'master' of https://github.com/YOUR_USERNAME/random.git
 ```
 
 
@@ -520,7 +521,7 @@ ready to push the merge:
 
 ```
 bob@hostB random$ git push
-To https://github.com/fenago/random.git
+To https://github.com/YOUR_USERNAME/random.git
    db23d0e..ba5807e  master -> master
 ```
 
@@ -548,7 +549,7 @@ Merge: 3b16f17 db23d0e
 Author: Bob Hacker <bob@company.com>
 Date:   Sat May 31 20:43:42 2015 +0200
 
-    Merge branch 'master' of https://github.com/fenago/random.git
+    Merge branch 'master' of https://github.com/YOUR_USERNAME/random.git
 ```
 
 
@@ -563,7 +564,7 @@ Counting objects: 1, done.
 Writing objects: 100% (1/1), 162 bytes, done.
 Total 1 (delta 0), reused 0 (delta 0)
 Unpacking objects: 100% (1/1), done.
-To https://github.com/fenago/random.git
+To https://github.com/YOUR_USERNAME/random.git
  * [new tag]         v0.1 -> v0.1
 ```
 
@@ -574,7 +575,7 @@ start with up-to-date work:
 
 ```
 alice@hostA random$ git pull
-From https://github.com/fenago/random.git
+From https://github.com/YOUR_USERNAME/random.git
    f4d9753..be08dee  master     -> origin/master
  * [new tag]         v0.1       -> v0.1
 Updating  f4d9753..be08dee
