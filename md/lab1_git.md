@@ -403,6 +403,8 @@ proper `Makefile`, and to add a `README` for a
 project:
 
 ```
+bob@hostA random$ touch README
+bob@hostA random$ touch Makefile
 bob@hostA random$ git add README Makefile
 bob@hostA random$ git status -s
 A  Makefile
@@ -427,6 +429,7 @@ bob@hostA random$ git mv src/random.c src/rand.c
 This of course also requires changes to the `Makefile`:
 
 ```
+bob@hostA random$ echo "updated" > Makefile
 bob@hostA random$ git status -s
  M Makefile
 R  src/random.c -> src/rand.c
@@ -435,6 +438,11 @@ R  src/random.c -> src/rand.c
 
 
 He then commits those changes.
+
+```
+bob@hostA random$ git commit -a -m "Rename random.c and updated Makefile"
+```
+
 
 
 ### Updating your repository (with merge)

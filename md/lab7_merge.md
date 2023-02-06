@@ -13,12 +13,14 @@ Here, we will show you a simulation of how merge conflicts appear.
 
 
 ``` 
+cd ~/work
 mkdir test-dir
 cd test-dir
 git init .
 echo "some content" > example.txt
 git add example.txt
 git commit -am "initial commit"
+
 [master (root-commit) a45c22d] initial commit
 1 file changed, 1 insertion(+)
 create mode 100524 example.txt

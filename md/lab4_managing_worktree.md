@@ -11,6 +11,7 @@ data analysis? Let's create a few dummy files:
 
 
 ``` 
+$ cd ~/work/planets
 $ mkdir results
 $ touch a.dat b.dat c.dat results/a.out results/b.out
 ```
@@ -505,7 +506,7 @@ Add the file to git and commit it.
 
 
 ``` 
-git add mul && git commit -m "Mul function"
+git add mul.py && git commit -m "Mul function"
 ```
 
 
