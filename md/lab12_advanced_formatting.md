@@ -123,6 +123,7 @@ the `<summary>` tag to create a label to the right of .
 </p>
 </details>
 ````
+
 ![](./images/4.png)
 
 

@@ -1,7 +1,7 @@
 Quickstart for writing on GitHub
 ================================
 
-In this lab, we will cover dollowing topics:
+In this lab, we will cover following topics:
 
 - Creating or editing your profile README
 - Adding an image to suit your visitors

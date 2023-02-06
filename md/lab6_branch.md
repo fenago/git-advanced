@@ -8,6 +8,12 @@ In this lab, we will cover following:
 - About changing the default branch
 - Deleting and restoring branches in a pull request
 
+**Note:** You can fork following repository to complete the lab or use one of the your existing GitHub repository:
+
+`https://github.com/fenago/publish-packages`
+
+![](./images/5.png)
+
 
 **Viewing branches in your repository**
 
@@ -138,6 +144,10 @@ are associated with closed or merged pull requests. You cannot delete
 branches that are associated with open pull requests.
 
 
+Prerequisites
+---------------
+
+Create a new branch and create new **Pull Request** after making some changes. Also, merge PR in the `main` branch.
 
 
 Deleting a branch used for a pull request

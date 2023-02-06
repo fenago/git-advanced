@@ -633,6 +633,66 @@ Date:   Thu Aug 22 09:51:46 2013 -0400
     Start notes on Mars as a base
 ```
 
+#### Time-limiting options
+
+
+If you are interested in commits created within
+some date range that you\'re interested in, you can use a number of
+options such as `--since` and `--until`, or
+`--before` and `--after`. For example, the following
+command gets the list of commits made in the last two weeks:
+
+```
+$ git log --since=2.weeks
+```
+
+#### Commit parents
+
+
+Git, by default, will follow all the parents of each merge commit, when walking down the ancestry chain. To
+make it follow only the first parent, you can use the aptly named
+`--first-parent` option. This will show you the main line of
+the history (sometimes called the trunk), assuming that you follow the
+specific practices with respect to merging changes.
+
+Compare (this example uses the very nice `--graph` option that
+makes an ASCII-art diagram of the history) the following code\...
+
+```
+$ git log -5 --graph --oneline
+```
+
+with this:
+
+
+```
+$ git log -5 --graph --oneline --first-parent
+```
+
+Let\'s say that you want to find the starting point(s) of your project.
+You can do this with the help of `--max-parents=0`, which
+would give you all the root commits:
+
+```
+$ git log --max-parents=0 --oneline
+```
+
+#### Summarizing contributions
+Ever wondered how many commits you've contributed to a project? Or perhaps, who is the most active developer during the last month (with respect to the number of commits)? Well, wonder no more, because this is what git shortlog is good for:
+
+```
+$ git shortlog -s -n
+```
+
+#### Viewing a revision and a file at revision
+Sometimes, you might want to examine a single revision (for example, a commit suspected to be buggy, found with git bisect) in more detail, examining together changes with their description. Or perhaps, you want to examine the tag message of an annotated tag together with the commit it points to. Git provides a generic git show command for this; it can be used for any type of object.
+
+For example, to examine the grandparent of the current version, use the following command:
+
+```
+$ git show HEAD^^
+```
+
 
 > Limit Log Size
 > ---------------------------------------------------------------------------------------------------------------
